@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapas do Progresso</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main-container">
+        <h1 class="sr-only">Etapas do Progresso</h1>
+        <div class="card"> 
+
+            <div class="card-header">
+                <h2>Complete seu cadastro</h2>
+                <p class="subtitle">Siga os passos abaixo para finalizar o seu registro.</p>
+            </div>
+
+            <div class="progress-container">
+
+                <div class="progress-bar" id="progress"></div>
+
+                <div class="step active" data-step="1">
+                  <div class="step-circle">1</div>
+                  <span class="step-label">Informações básicas</span>
+                </div>
+
+                <div class="step" data-step="2">
+                  <div class="step-circle">2</div>
+                  <span class="step-label">Detalhes pessoais</span>
+                </div>
+
+                <div class="step" data-step="3">
+                  <div class="step-circle">3</div>
+                  <span class="step-label">Configurações</span>
+
+                <div class="step" data-step="4">
+                  <div class="step-circle">4</div>
+                  <span class="step-label">Confirmação</span>
+                </div>
+                </div>
+
+                <div class="class-container" id="container">
+
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-secondary" id="prev" disabled>
+                        <span class="icon"></span> Voltar
+                    </button>
+
+                    <button class="btn btn-primary" id="next">
+                        Proximo <span class="icon"></span>
+                    </button>
+
+                    <button class="btn btn-sucess" id="submit" style="display: none;">
+                        Finalizar Cadastro
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
