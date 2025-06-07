@@ -1,0 +1,14 @@
+body {
+    background-color: lightgrey;
+}
+
+button  {
+    height: 50px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: rgb(231, 231, 81);
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 30px;
+}
