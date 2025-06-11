@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Adivinhe o Número</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+    <div class="game-container">
+
+        <h1 class="game-title">Adivinhe o Número</h1>
+
+        <p class="game-instructions">
+            Tente adivinhar um número entre 1 e 100. Você tem
+            <span id ="max-attempts">10</span> Tentativas! 
+        </p>
+
+        <div id="game-form-container" class="game-form-container">
+            <form id="game-form" class="game-form">
+                <div class="form-group">
+                    <label for="guess-input" class="form-label">Seu palpite:</label>
+
+                    <input type="number" id="guess-input" class="form-input" placeholder="Digite um número entre 1-100">
+                    <div id="error-messages" class="error-messages"></div>
+                </div>
+                <button type="submit" class="submit-button" id="submit-button">Enviar Palpite</button>
+            </form>
+            
+            <div class="game-info">
+                <p>Tentativas restantes: <span id="remaining-attempts">10</span></p>
+
+                <div class="progress-bar">
+                    <div id="progress-bar" class="progress"></div>
+                </div>
+
+                <p id="previous-guesses">Tentativas anteriores:</p>
+            </div>
+            
+            <div id="freedback-messages" class="freedback-messages"></div>
+
+            <div id="game-actions" class="game-actions" style="display: none;">
+                <button id="restart-button" class="restart-button">Jogar novamente</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
