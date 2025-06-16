@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <input type="text" id="nameInput" 
+        placeholder="Enter your Name...">
+            
+        <button onclick="saveName()">SAVE NAME</button>
+        <button onclick="showName()">SHOW NAME</button>
+                
+
+        <p id="output"></p>
+    </main>
+</body>   
+    <script>
+        function saveName() {
+            const name = document.getElementById("nameInput").value;
+            localStorage.setItem("Username", name);
+        }
+
+        function showName() {
+            let savedData = localStorage.getItem("Username");
+            document.getElementById("output").innerText= "Welcome " +
+            savedData;
+        }
+    </script>
+</body>
+</html>
