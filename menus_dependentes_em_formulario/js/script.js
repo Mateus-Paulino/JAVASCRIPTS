@@ -4,7 +4,7 @@ const cidadeSelect = document.getElementById('cidade');
 
 const formInput = document.getElementById('codigo-cidade');
 
-fetch('https://servicosdados.ibge.gov.br/api/v1/localidade/estado?')
+fetch('https://servicosdados.ibge.gov.br/api/v1/localidade/estado?orderBy=nome')
 .then(response => response.json())
 .then(estados =>{
     ufSelect.innerHTML = '<option value="">Selecione um Estado</option>'
