@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Interactive Story Generator</h1>
+        <div class="wrapper">
+        <div>
+            <label for="name">Enter a name:</label>
+            <input type="text" id="name" placeholder="Type a name" required>
+        </div>
+        <div>
+            <label for="place">Enter a place:</label>
+            <input type="text" id="place" placeholder="Type a place" required>
+        </div>
+        <div>
+            <label for="object">Enter a object:</label>
+            <input type="text" id="object" placeholder="Type an object" required>
+        </div>
+        <div>
+            <label for="action">Enter an action:</label>
+            <input type="text" id="action" placeholder="Type an action" required>
+        </div>
+        </div>
+        <button id="generateStory">Generate Story</button>
+        <div id="story" class="story"></div>
+        
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
