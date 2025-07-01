@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7fa;
+}
+
+.wrapper {
+    width: 20em;
+    text-align: center;
+}
+
+#battery {
+    position: relative;
+    height: 7.8em;
+    width: 17.5em;
+    border: 0.6em solid #000000;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+#battery::before {
+    content: "";
+    position: absolute;
+    height: 5em;
+    width: 1.1em;
+    background-color: #000000;
+    top: 0;
+    bottom: 0;
+    right: -1.6em;
+    margin: auto;
+    border-radius: 0 0.3em 0.3em 0;
+}
+
+#charge {
+    position: absolute;
+    height: 6em;
+    width: 0;
+    background-color: #4cAF50;
+    top: 0.35em;
+    left: 0.35em;
+    border-radius: 0.2em;
+    transition: width 0.5s ease,
+    background-color 0.5s ease;
+}
+
+#charge-level {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333333;
+}
+
+#charging-status {
+    margin-top: 1.5em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#charging-status span {
+    color: #000000;
+}
+
+.active {
+    animation: charge-animation 3s infinite; 
+}
+@keyframes charge-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 15.5em;
+    }
+}
